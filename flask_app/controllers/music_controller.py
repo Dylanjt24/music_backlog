@@ -46,6 +46,8 @@ def search():
 
 @app.route('/backlog')
 def backlog():
+    if 'uuid' not in session:
+        return redirect('/')
     backlog = User.get_backlog({'id': session['uuid']})
     return render_template('backlog.html', backlog=backlog)
 
@@ -66,6 +68,8 @@ def remove_album(id):
 
 @app.route('/backlog/ignore')
 def get_ignored():
+    if 'uuid' not in session:
+        return redirect('/')
     ignored = User.get_ignored({'id': session['uuid']})
     return render_template('ignored.html', ignored=ignored)
 
