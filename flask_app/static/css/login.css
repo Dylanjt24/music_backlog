@@ -1,0 +1,32 @@
+#container {
+    width: 800px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#register {
+    background-color: rgb(95, 95, 95);
+    padding: 20px;
+    color: #1b6de7;
+}
+
+#login {
+    background-color: rgb(95, 95, 95);
+    padding: 20px;
+    color: #0a7744;
+}
+
+.form-label {
+    color: white;
+}
+
+.btn {
+    margin-top: 20px;
+}
+
+p {
+    color: rgb(134, 0, 0);
+    background-color: pink;
+    padding: 5px;
+}
