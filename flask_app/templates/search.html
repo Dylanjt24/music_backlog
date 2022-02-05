@@ -14,12 +14,14 @@
             <h1>Search For Music</h1>
             <div>
                 {% if 'uuid' in session %}
-                <a href="/users/logout">Logout</a>
-                <a href="/backlog">View Backlog</a>
+                <a class="btn btn-danger" href="/users/logout">Logout</a>
                 {% else %}
-                <a id="login" href="/users/new">Login/Sign Up</a>
+                <a id="login" class="btn btn-outline-primary" href="/users/new">Login/Sign Up</a>
                 {% endif %}
             </div>
+            {% if 'uuid' in session %}
+            <a href="/backlog">View Backlog</a>
+            {% endif %}
         </div>
         <div>
             <img id="album_img" src="" alt="">
@@ -31,7 +33,7 @@
             <input type="text" class="form-control" name="query" id="query" placeholder="Search by artist to get a random similar suggestion">
             <input type="submit" class="btn btn-primary mt-2" value="Search">
         </form>
-        <div class="mt-4">
+        <div class="mt-4" id="test">
             <form action="/backlog/add" method="post">
                 <input type="hidden" id="artist_input" name="artist" value="">
                 <input type="hidden" id="album_input" name="album" value="">

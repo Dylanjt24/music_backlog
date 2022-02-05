@@ -6,13 +6,13 @@
 }
 
 #register {
-    background-color: rgb(95, 95, 95);
+    background-color: rgb(173, 173, 173);
     padding: 20px;
     color: #1b6de7;
 }
 
 #login {
-    background-color: rgb(95, 95, 95);
+    background-color: rgb(173, 173, 173);
     padding: 20px;
     color: #0a7744;
 }

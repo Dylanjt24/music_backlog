@@ -8,3 +8,13 @@
     margin: 0 auto;
     text-align: center;
 }
+
+#test {
+    display: flex;
+    justify-content: space-around;
+}
+
+.form-control {
+    width: 700px;
+    margin: 0 auto;
+}

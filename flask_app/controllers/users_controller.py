@@ -48,7 +48,6 @@ def create_user():
 @app.route('/users/login', methods=['POST'])
 def user_login():
     is_valid = User.validate_login(request.form)
-    print(is_valid)
     if not is_valid:
         return redirect('/users/new')
     return redirect('/')
